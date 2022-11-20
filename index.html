@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Kap</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-cpu-line"></i>
+          Kap
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">👋 Hi, I'm Kap</h1>
+            <h3 class="home__subtitle">Game Developer | Web Developer</h3>
+          </div>
+
+          <div class="home__img-wrapper">
+            <img src="assets/img/profile.png" alt="" class="home__img" />
+            <div class="home__icons">
+              <i class="ri-service-line home__icon"></i>
+              <i class="ri-dashboard-3-line home__icon"></i>
+              <i class="ri-flashlight-fill home__icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h1 class="section__title">My Services</h1>
+        <h2 class="section__subtitle">See what i offer</h2>
+
+        <div class="services__container container">
+          <article class="services__card">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="services__title">Game</h1>
+            <h3 class="services__subtitle">Development</h3>
+
+            <i class="ri-gamepad-line services__icon"></i>
+
+            <div class="services__stars">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+
+            <button class="button services__button"><i class="ri-information-line"></i></button>
+          </article>
+
+          <article class="services__card">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="services__title">Web</h1>
+            <h3 class="services__subtitle">Development</h3>
+
+            <i class="ri-layout-line services__icon"></i>
+
+            <div class="services__stars">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+
+            <button class="button services__button"><i class="ri-information-line"></i></button>
+          </article>
+
+          <article class="services__card">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="services__title">Manga</h1>
+            <h3 class="services__subtitle">And Pixel Art</h3>
+
+            <i class="ri-brush-line services__icon"></i>
+
+            <div class="services__stars">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+
+            <button class="button services__button"><i class="ri-information-line"></i></button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <h2 class="section__title">My Skills</h2>
+        <h2 class="section__subtitle">I like to enjoy bringing ideas to life</h2>
+
+        <div class="skills__content">
+          <div class="skills__buttons" id="skills-buttons">
+            <button class="button skills__button">
+              <i class="ri-gamepad-line"></i>
+              Game Dev
+            </button>
+            <button class="button skills__button">
+              <i class="ri-layout-line"></i>
+              Web Dev
+            </button>
+            <button class="button skills__button">
+              <i class="ri-brush-line"></i>
+              Digital Art
+            </button>
+          </div>
+
+          <div class="skills__list skills-a grid" id="skills-list"></div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <h3 class="section__subtitle">My Recent Work</h3>
+        <div class="portfolio__container container">
+          <ul class="portfolio__filters">
+            <li>
+              <button class="portfolio__item active-portfolio" data-filter="all">
+                <span>All</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio__item" data-filter=".webdev">
+                <i class="ri-layout-line"></i>
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio__item" data-filter=".gamedev">
+                <i class="ri-gamepad-line"></i>
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio__item" data-filter=".digiart">
+                <i class="ri-brush-line"></i>
+              </button>
+            </li>
+          </ul>
+
+          <div class="portfolio__content grid">
+            <article class="portfolio__card mix webdev">
+              <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img" />
+
+              <div class="shape shape__smaller"></div>
+
+              <div class="portfolio__data">
+                <h1 class="portfolio__title">Modern Website</h1>
+
+                <h3 class="portfolio__subtitle">Web Dev</h3>
+              </div>
+
+              <button class="button portfolio__button">
+                <i class="ri-information-line"></i>
+              </button>
+            </article>
+            <article class="portfolio__card mix gamedev">
+              <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img" />
+
+              <div class="shape shape__smaller"></div>
+
+              <div class="portfolio__data">
+                <h1 class="portfolio__title">Cool Game</h1>
+
+                <h3 class="portfolio__subtitle">Game Dev</h3>
+              </div>
+
+              <button class="button portfolio__button">
+                <i class="ri-information-line"></i>
+              </button>
+            </article>
+            <article class="portfolio__card mix digiart">
+              <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img" />
+
+              <div class="shape shape__smaller"></div>
+
+              <div class="portfolio__data">
+                <h1 class="portfolio__title">Pixel Art</h1>
+
+                <h3 class="portfolio__subtitle">Digital Art</h3>
+              </div>
+
+              <button class="button portfolio__button">
+                <i class="ri-information-line"></i>
+              </button>
+            </article>       
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <h3 class="section__subtitle">Get in touch</h3>
+
+        <div class="contact__container container grid">
+          <div class="contact__informations">
+            <div class="contact__information">
+              <i class="ri-phone-line contact__icon"></i>
+
+              <div class="contact__information-data">
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="ri-mail-line contact__icon"></i>
+
+              <div class="contact__information-data">
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">alexa@email.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="ri-map-pin-line contact__icon"></i>
+
+              <div class="contact__information-data">
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Peru - Lima Av. Bolivar #123</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Project</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">Send Message<i class="uil uil-message button__icon"></i></a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="shape shape__big"></div>
+      <div class="shape shape__small"></div>
+
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo"><i class="ri-cpu-line"></i> Kap </a>
+          <p class="footer__description">
+            Game Developer & Web Developer<br />
+            I design and code beautifully simple things,<br /> and I love what I do.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+              <i class="ri-twitter-line"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer__copy"> &#169; Kap. All rigths reserved </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
